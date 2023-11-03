@@ -1,10 +1,12 @@
 # DataAPI
-Este é um aplicativo iOS de exemplo que demonstra como recuperar dados de uma API REST e exibi-los em uma tabela. A estrutura segue o padrão de arquitetura MVC (Model-View-Controller) e compreende as seguintes partes principais:
+Este é um aplicativo de exemplo para dispositivos iOS, criado para mostrar como recuperar dados de uma API REST e exibi-los em uma tabela. Ele segue o padrão de arquitetura Model-View-Controller (MVC) e é composto pelas seguintes partes:
 
-Model (Modelo): Inclui a estrutura Post para representar as postagens com propriedades como ID, título e corpo.
+Model (Modelo): Esta parte do aplicativo inclui a estrutura Post, que representa as postagens obtidas da API. Cada postagem é descrita por propriedades como ID, título e corpo.
 
-View (Visualização): Consiste em CustomTableViewCellScreen para definir a aparência das células da tabela, exibindo informações de ID, título e corpo.
+View (Visualização): A camada de visualização é construída com base na classe CustomTableViewCellScreen, que define como as células na tabela devem aparecer. Cada célula exibe informações como ID, título e corpo das postagens.
 
-Controller (Controlador): Contém o PostViewModel que gerencia a lógica de busca de dados da API. Além disso, o HomeViewController age como o controlador principal, usando a HomeScreen para exibir os dados recuperados da API em uma tabela.
+Controller (Controlador): Aqui é onde a mágica acontece. O PostViewModel gerencia a lógica de busca de dados da API. O HomeViewController atua como o controlador principal do aplicativo, usando a HomeScreen para mostrar os dados recuperados da API em uma tabela organizada.
 
-Este aplicativo busca postagens de uma API de teste (https://jsonplaceholder.typicode.com/posts) e as apresenta em uma tabela. Ele é um ponto de partida útil para aplicativos iOS que envolvem a recuperação e exibição de dados de uma API em uma interface de tabela organizada.
+O aplicativo se conecta a uma API de teste, que é a URL "https://jsonplaceholder.typicode.com/posts". Ele faz uma solicitação para obter as postagens disponíveis nessa API e, em seguida, as exibe em uma tabela, tornando-as facilmente navegáveis para o usuário.
+
+
